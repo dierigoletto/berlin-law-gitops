@@ -19,6 +19,15 @@ agent_options:
 controls:
   scripts:
     - path: ../lib/macos/scripts/set-timezone.script.sh
+    - path: ../lib/windows/scripts/set-wallpaper.ps1
+  enable_disk_encryption: true
+  macos_settings:
+    custom_settings:
+      - path: ../lib/macos/configuration-profiles/passcode-settings-ddm.json
+      - path: ../lib/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
+  ipados_updates:
+      dealine: "2026-01-30"
+      minimum-version: "26.0"
 team_settings:
   secrets:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"
