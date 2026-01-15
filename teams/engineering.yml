@@ -41,6 +41,5 @@ team_settings:
         destination_url: https://webhook.site/177b94bc-4f0f-4500-bdd4-26fcb0bb5092
         host_batch_size: 0
         policy_ids:
-          - 1
-          - 2
+          - 2433
 software:
